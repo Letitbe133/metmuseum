@@ -1,4 +1,12 @@
-# metmuseum
+# Make a dream !
+
+Dreams are a human thing. Or so we believe ;&#41;
+
+This simple web app will pick a random image from the Metropolitan Museum of Art Collection API (https://metmuseum.github.io/) and pass it to the DeepAI API (https://deepai.org/) that will use it to generate a "dream".
+
+Weird stuff ahead ;&#41;
+
+Original idea by miplayer1 (https://github.com/miplayer1)
 
 ## How to use
 
