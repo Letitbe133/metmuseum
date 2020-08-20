@@ -4,7 +4,7 @@
       <p>{{ quote.quote }}</p>
       <footer>{{ quote.author }}</footer>
     </blockquote>
-    <div class="loader">
+    <div>
       <b-loading :is-full-page="false" :active.sync="this.isLoading">
       </b-loading>
     </div>
@@ -29,11 +29,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.loader {
-  width: 20%;
-  background: red;
-  margin: auto;
-}
-</style>
