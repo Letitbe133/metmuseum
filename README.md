@@ -23,9 +23,9 @@ cd met metmuseum
 ```
 
 3. edit `env.example.local`
-   with your DeepAI api key && rename file to `env.local`
+   with your DeepAI api key && rename file to `.env.local`
 
-   Get your free DeepAI api key here : https://deepai.org/
+   Get your free DeepAI api key by creating a free account here : https://deepai.org/
 
 ```
 VUE_APP_API_KEY = YOUR_API_KEY
