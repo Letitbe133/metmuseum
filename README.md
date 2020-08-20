@@ -1,24 +1,52 @@
 # metmuseum
 
-## Project setup
+## How to use
+
+1. clone project
+
+```
+git clone git@github.com:Letitbe133/metmuseum.git
+```
+
+2. cd into project folder
+
+```
+cd met metmuseum
+```
+
+3. edit `env.example.local`
+   with your DeepAI api key && rename file to `env.local`
+
+   Get your free DeepAI api key here : https://deepai.org/
+
+```
+VUE_APP_API_KEY = YOUR_API_KEY
+```
+
+4. install project dependencies
+
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+5. start dev server
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+6. once project is ready for production run
+
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+This will create a `dist/` folder containing production ready files that you can `ssh` or `ftp` to your production server
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Tip : if your project needs to be installed in a sub folder on your server (eg: `http://example.com/project_folder`), make sure to edit `vue.config.js` accordingly :
+
+```js
+  publicPath: process.env.NODE_ENV === "production" ? "/project_folder/" : "/",
+//   default is "/"
+
+```
